@@ -250,6 +250,7 @@ namespace Prueba
                     
                     lblREsultado1.Text = Convert.ToString(tr.Area);
                     lblResultado2.Text = Convert.ToString(tr.Perimetro);
+                    lblResultado3.Text = Convert.ToString(tr.Altura);
                     break;
                 case 3:
                     double Lado = Convert.ToDouble(txtValor1.Text);

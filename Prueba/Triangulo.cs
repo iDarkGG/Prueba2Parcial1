@@ -18,12 +18,12 @@ namespace Prueba
 
         public new void CalcularAltura(double LadoArriba, double LadoAbajo)
         {
-            Altura = Math.Sqrt(Math.Pow(LadoArriba, 2) * Math.Pow(LadoAbajo, 2));
+            Altura = Math.Sqrt((LadoArriba - LadoAbajo) * (LadoArriba + LadoAbajo));
         }
 
         public new void CalcularPerimetro(double lado)
         {
-            Perimetro = lado*3;
+            Perimetro = lado * 3;
         }
     }
 }
