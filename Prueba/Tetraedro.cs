@@ -17,7 +17,7 @@ namespace Prueba
         public new void CalcularVolumen(double lado)
         {
             Lado = lado;
-            Volume = Math.Pow(Lado, 3) * (Math.Sqrt(2)/12);
+            Volume = (Math.Pow(Lado, 3) * (Math.Sqrt(2))/12);
         }
     }
 }
