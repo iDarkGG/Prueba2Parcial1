@@ -175,7 +175,7 @@
             // lblActual2
             // 
             this.lblActual2.AutoSize = true;
-            this.lblActual2.Location = new System.Drawing.Point(154, 259);
+            this.lblActual2.Location = new System.Drawing.Point(138, 259);
             this.lblActual2.Name = "lblActual2";
             this.lblActual2.Size = new System.Drawing.Size(38, 15);
             this.lblActual2.TabIndex = 15;
@@ -184,7 +184,7 @@
             // lblActualizar
             // 
             this.lblActualizar.AutoSize = true;
-            this.lblActualizar.Location = new System.Drawing.Point(154, 230);
+            this.lblActualizar.Location = new System.Drawing.Point(138, 230);
             this.lblActualizar.Name = "lblActualizar";
             this.lblActualizar.Size = new System.Drawing.Size(54, 15);
             this.lblActualizar.TabIndex = 14;
@@ -223,7 +223,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(419, 434);
+            this.ClientSize = new System.Drawing.Size(431, 434);
             this.Controls.Add(this.chkbox2);
             this.Controls.Add(this.lblResultado3);
             this.Controls.Add(this.lblDescription3);
