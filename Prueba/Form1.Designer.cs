@@ -38,7 +38,6 @@
             this.txtValor1 = new System.Windows.Forms.TextBox();
             this.txtValor2 = new System.Windows.Forms.TextBox();
             this.btnProcesar = new System.Windows.Forms.Button();
-            this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.chkbxAlturaChecker = new System.Windows.Forms.CheckBox();
             this.lblActual2 = new System.Windows.Forms.Label();
@@ -142,18 +141,9 @@
             this.btnProcesar.UseVisualStyleBackColor = true;
             this.btnProcesar.Click += new System.EventHandler(this.btnProcesar_Click);
             // 
-            // btnLimpiar
-            // 
-            this.btnLimpiar.Location = new System.Drawing.Point(31, 308);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(75, 23);
-            this.btnLimpiar.TabIndex = 11;
-            this.btnLimpiar.Text = "LIMPIAR";
-            this.btnLimpiar.UseVisualStyleBackColor = true;
-            // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(31, 346);
+            this.btnSalir.Location = new System.Drawing.Point(31, 302);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 12;
@@ -231,7 +221,6 @@
             this.Controls.Add(this.lblActualizar);
             this.Controls.Add(this.chkbxAlturaChecker);
             this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnProcesar);
             this.Controls.Add(this.txtValor2);
             this.Controls.Add(this.txtValor1);
@@ -264,7 +253,6 @@
         private TextBox txtValor1;
         private TextBox txtValor2;
         private Button btnProcesar;
-        private Button btnLimpiar;
         private Button btnSalir;
         private CheckBox chkbxAlturaChecker;
         private Label lblActual2;
