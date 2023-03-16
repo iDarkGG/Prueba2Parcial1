@@ -12,6 +12,26 @@ namespace Prueba
         Cubo cub = new Cubo();
         Esfera es = new Esfera();
         Tetraedro te = new Tetraedro();
+
+        public void ControlsHandler()
+        {
+            foreach (var item in Controls.OfType<Label>())
+            {
+                item.Visible = false;
+            } 
+            foreach (var item in Controls.OfType<CheckBox>())
+            {
+                item.Visible = false;
+            }
+            foreach (var item in Controls.OfType<TextBox>())
+            {
+                item.Visible = false;
+                item.Clear();
+            }
+           
+        }
+
+
         public Form1()
         {
             InitializeComponent();
@@ -20,20 +40,7 @@ namespace Prueba
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            chkbxAlturaChecker.Visible = false;
-            chkbox2.Visible = false;
-            lblActualizar.Visible = false;
-            lblActual2.Visible = false;
-            lblDescription1.Visible = false;
-            lblDescription2.Visible = false;
-            lblDescription3.Visible = false;
-            lblREsultado1.Visible = false;
-            lblResultado2.Visible = false;
-            lblResultado3.Visible = false;
-            txtValor1.Visible = false;
-            txtValor2.Visible = false;
-            txtValor1.Clear();
-            txtValor2.Clear();
+            ControlsHandler();
             lblREsultado1.Text = "";
             lblResultado2.Text = "";
             lblResultado3.Text = "";
@@ -45,7 +52,7 @@ namespace Prueba
                 switch (itemnum)
                 {
                     case 0:
-                        pctImagen.Image = Image.FromFile(Application.StartupPath +"\\"+ "circulo.png");
+                        //pctImagen.Image = Image.FromFile(Application.StartupPath +"\\"+ "circulo.png");
                         chkbox2.Visible = true;
                         lblActualizar.Visible = true;
                         lblDescription1.Visible = true;
@@ -59,7 +66,7 @@ namespace Prueba
                         globalValue = 0;
                         break;
                         case 1:
-                        pctImagen.Image = Image.FromFile(Application.StartupPath + "\\" + "cuadrado.png");
+                        //pctImagen.Image = Image.FromFile(Application.StartupPath + "\\" + "cuadrado.png");
                         lblActualizar.Visible = true;
                         lblDescription1.Visible = true;
                         lblDescription2.Visible = true;
@@ -73,7 +80,7 @@ namespace Prueba
                         break;
 
                     case 2:
-                        pctImagen.Image = Image.FromFile(Application.StartupPath + "\\" + "triangulo.png");
+                        //pctImagen.Image = Image.FromFile(Application.StartupPath + "\\" + "triangulo.png");
                         chkbxAlturaChecker.Visible = true;
                         lblActualizar.Visible = true;
                         lblActual2.Visible = true;
@@ -101,7 +108,7 @@ namespace Prueba
                     switch (itemnum)
                     {
                         case 0:
-                            pctImagen.Image = Image.FromFile(Application.StartupPath + "\\" + "cubo.png");
+                            //pctImagen.Image = Image.FromFile(Application.StartupPath + "\\" + "cubo.png");
                             lblActualizar.Visible = true;
                             lblDescription1.Visible = true;
                             lblDescription2.Visible = true;
@@ -114,7 +121,7 @@ namespace Prueba
                             globalValue = 3;
                             break;
                         case 1:
-                            pctImagen.Image = Image.FromFile(Application.StartupPath + "\\" + "esfera.png");
+                            //pctImagen.Image = Image.FromFile(Application.StartupPath + "\\" + "esfera.png");
                             lblActualizar.Visible = true;
                             lblDescription1.Visible = true;
                             lblDescription2.Visible = true;
@@ -128,7 +135,7 @@ namespace Prueba
                             break;
 
                         case 2:
-                            pctImagen.Image = Image.FromFile(Application.StartupPath + "\\" + "tetraedro.png");
+                            //pctImagen.Image = Image.FromFile(Application.StartupPath + "\\" + "tetraedro.png");
                             lblActualizar.Visible = true;
                             lblDescription1.Visible = true;
                             lblDescription2.Visible = true;
@@ -152,18 +159,7 @@ namespace Prueba
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            chkbxAlturaChecker.Visible = false;
-            chkbox2.Visible = false;
-            lblActualizar.Visible = false;
-            lblActual2.Visible = false;
-            lblDescription1.Visible = false;
-            lblDescription2.Visible = false;
-            lblDescription3.Visible = false;
-            lblREsultado1.Visible = false;
-            lblResultado2.Visible = false;
-            lblResultado3.Visible = false;
-            txtValor1.Visible = false;
-            txtValor2.Visible = false;
+            ControlsHandler();
 
         }
 
